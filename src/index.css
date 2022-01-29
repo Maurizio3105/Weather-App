@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;1,300;1,400;1,600&display=swap');
+@import url('https://css.gg/search.css');
+
+
+body {
+  margin: 0;
+  font-family:'Montserrat', sans-serif;
+  background-color:#F8E0C9;
+}
+
+.navbar{
+  
+  
+  width: 98%;
+  margin: 20px 1%;
+  box-shadow: 0 5px 10px rgba(129, 124, 124, 0.2);
+  display: inline-flex;
+  border-radius: 6px;
+  backdrop-filter: blur(14px);
+  background-color: whitesmoke;
+  justify-content: space-between;
+    align-content: space-around;
+    align-items: center;
+}
+
+.navbar h1{
+  padding-left: 20px;
+}
+
+.navbar .ricercaDiv{
+  padding-right: 20px;
+}
+
+.btn {
+  border: none;
+  background: none;
+}
+
+.inputTextField{
+  height: 25px;
+  margin-left: 60px;
+
+}
+
+.container{
+  padding: 0px 1%;
+  display: inline-flex;
+  justify-content: space-between;
+  width: 98%;
+}
+.headerDiv{
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+}
+.citta{
+  font-size: 25px;
+  margin: 0px 20px;
+}
+.citta a{
+  color: black;
+}
+.main_info{
+  margin: 15px;
+  justify-content: space-between;
+  font-size: 30px;
+}
+.temperatura{
+  font-size: 30px;
+  margin: 15px;
+}
+
+.centerDiv {
+border: solid red 1px;
+background-color: white;
+width: 30%;
+padding: 20px;
+border-radius: 5px;
+}
+
+.sideDiv{
+  background-color: white;
+  width: 30%;
+  padding: 20px;
+  border-radius: 5px;
+}
+.info{
+  font-size: 25px;
+  margin: 15px;
+}
+.stat{
+  font-size: 20px;
+  margin: 1px 10px;
+}
+
+/* Icona Ricerca */
+.gg-search {
+    box-sizing: border-box;
+    position: relative;
+    display: inline-flex;
+    transform: scale(var(--ggs,1));
+    width: 16px;
+    height: 16px;
+    border: 2px solid;
+    border-radius: 100%;
+    margin-left: 3px;
+    margin-top: -4px;
+}
+.gg-search::after {
+    content: "";
+    display: inline-flex;
+    box-sizing: border-box;
+    position: absolute;
+    border-radius: 3px;
+    width: 2px;
+    height: 8px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    top: 10px;
+    left: 12px
+}
+
+
