@@ -52,7 +52,7 @@ function App() {
         ) : ('')}
         {(typeof weather.main != "undefined") ? (
           <div className="centerDiv">
-            <button class="button-35" type="btn"><a href={"https://www.google.it/maps/place/" + weather.name}>Trova posizione</a></button>
+            <button className="btn" type="btn"><a href={"https://www.google.it/maps/place/" + weather.name}><i class="gg-external"></i></a>Cerca su Maps</button>
           </div>
         ) : ('')}
 
