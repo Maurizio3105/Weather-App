@@ -6,11 +6,9 @@ const API_KEY = "80b87de9907125aa065d41b29792b7e9"
 
 function App() {
   const [weather, setWeather] = useState({})
-  const [weatherHistory, setWeatherHistory] = useState({})
   const [city, setCity] = useState("")
 
   useEffect(() => {
-/*godo*/
   }, [])
 
   function CercaDati(ev) {
@@ -21,10 +19,6 @@ function App() {
     
     setCity("")
 
-    fetch(`https://api.openweathermap.org/data/2.5/onecall?lat=${weather.cord.lat}&lon=${weather.cord.lon}&appid=80b87de9907125aa065d41b29792b7e9`)
-      .then(res => res.json())
-      .then(body => console.log(body))
-    return false
   }
 
   return (
@@ -45,7 +39,7 @@ function App() {
         {(typeof weather.main != "undefined") ? (
           <div className="headerDiv">
 
-            <p className="citta"><a href={"https://www.google.it/maps/place/" + weather.name}>{weather.name}</a></p>
+            <p className="citta">{weather.name}</p>
 
              <img src={"https://openweathermap.org/img/wn/" + weather.weather[0].icon + ".png"} height="60px" />
             
@@ -56,10 +50,9 @@ function App() {
 
           </div>
         ) : ('')}
-
         {(typeof weather.main != "undefined") ? (
           <div className="centerDiv">
-
+            <button type="btn"><a href={"https://www.google.it/maps/place/" + weather.name}>Trova posizione</a></button>
           </div>
         ) : ('')}
 
