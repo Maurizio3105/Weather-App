@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Oxygen&display=swap');
-/* font-family: 'Oxygen', sans-serif; */
-@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
-/* font-family: 'Indie Flower', cursive; */
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+/* font-family: 'Didact Gothic', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 /* font-family: 'Permanent Marker', cursive; */
 @import url('https://css.gg/search.css');
@@ -9,7 +7,7 @@
 
 body {
   margin: 0;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Didact Gothic', sans-serif;
   background-color:#F8E0C9;
 }
 
@@ -67,7 +65,7 @@ body {
 /* DIV 1 */
 .headerDiv{
   background-color: white;
-  width: 20%;
+  width: 30%;
   padding: 20px;
   border-radius: 5px;
 }
@@ -84,7 +82,6 @@ body {
 }
 
 .centerDiv {
-background-image: url("assets/mapBG.jpg");
 width: 30%;
 padding: 20px;
 border-radius: 5px;
@@ -92,6 +89,7 @@ justify-content: space-between;
 align-content: space-around;
 align-items: center;
 }
+
 /* Icona Esterna*/
 .gg-external {
     box-sizing: border-box;
@@ -136,9 +134,38 @@ align-items: center;
   padding: 20px;
   border-radius: 5px;
 }
+.info_condition {
+  font-size: 25px;
+  margin: 15px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: left;
+  align-items: left;
+}
+.info_stat {
+  font-size: 25px;
+  margin: 15px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: left;
+  align-items: left;
+}
 .info{
   font-size: 25px;
   margin: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: left;
+  align-items: left;
+}
+
+.info img {
+  margin-right: 20px;
+  width: 30px;
+  height: auto;
 }
 .stat{
   font-size: 20px;
