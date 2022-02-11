@@ -3,15 +3,33 @@
     "src/App.jsx": [
       {
         "id": "dfa725ef-97a3-434f-84ed-5020df1b1af4",
-        "line": 8,
-        "version": 539,
-        "index": 168
+        "line": 6,
+        "version": 714,
+        "index": 166
+      },
+      {
+        "id": "8ceadf70-e84e-4f7c-8f09-50f890a809b3",
+        "line": 24,
+        "version": 926,
+        "index": 560
+      },
+      {
+        "id": "3712b946-187f-4ae6-995d-c4b597d9b583",
+        "line": 37,
+        "version": 926,
+        "index": 1019
+      },
+      {
+        "id": "285c22ce-aa49-476c-823e-9aa61bca7cb5",
+        "line": 39,
+        "version": 926,
+        "index": 1107
       },
       {
         "id": "bd855a84-d97c-401d-8ea9-ba296f8fb73a",
         "line": 85,
-        "version": 539,
-        "index": 2361
+        "version": 714,
+        "index": 2511
       }
     ]
   }

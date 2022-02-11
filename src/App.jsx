@@ -1,7 +1,5 @@
 
 import React, { useState, useEffect } from 'react';
-
-
 const API_KEY = "80b87de9907125aa065d41b29792b7e9"
 
 function App() {
@@ -18,19 +16,20 @@ function App() {
       .then(body => setWeather(body))
     
     setCity("")
-
   }
 
   return (
     <div>
       <form onSubmit={(ev) => CercaDati(ev)}>
         <nav className="navbar">
-          <h1 className="titolo">Weather App</h1>
+          <div className="logoTitolo">
+            <div class="logo-image"></div>
+            <h1 className="titolo">Weather App</h1>
+          </div>
           <div className="ricercaDiv">
-            <input type="text" className="inputTextField" value={city} onChange={(ev) => setCity(ev.target.value)} />
+            <input type="text" className="inputTextField" value={city} onChange={(ev) => setCity(ev.target.value)}/>
             <button className="btn"> <i class="gg-search"></i> </button>
           </div>
-
         </nav>
 
       </form>
@@ -38,14 +37,18 @@ function App() {
       <div className="container">
         {(typeof weather.main != "undefined") ? (
           <div className="headerDiv">
-
-            <p className="citta">{weather.name}</p>
-
-             <img src={"https://openweathermap.org/img/wn/" + weather.weather[0].icon + ".png"} height="60px" />
-            
-             <p className="main_info">{weather.weather[0].main}</p>
-
+            <div className="info">
+            <img src="./assets/location.png" height="30px" />
+              <p className="citta">{weather.name}</p>
+            </div>
+            <div className="info">
+            <img src={"https://openweathermap.org/img/wn/" + weather.weather[0].icon + ".png"} height="60px" />
+            <p className="main_info">{weather.weather[0].main}</p>
+            </div>
+            <div className="info">
+            <img src="./assets/temp.png" height="30px" />
             <p className="temperatura">{weather.main.temp}°C</p>
+            </div>
 
 
           </div>
@@ -60,21 +63,25 @@ function App() {
           <div className="sideDiv">
 
             <div className="info">
+            <img src="./assets/humidity.png" height="30px" />
               Umidità
               <p className="stat">{weather.main.humidity}%</p>
             </div>
 
             <div className="info">
+            <img src="./assets/atmPressure.png" height="30px" />
               Pressione atmosferica
               <p className="stat">{weather.main.pressure} PS</p>
             </div>
 
             <div className="info">
+            <img src="./assets/wind.png" height="30px" />
               Vento
               <p className="stat">{weather.wind.speed} km/h, {weather.wind.deg}°</p>
             </div>
 
             <div className="info">
+            <img src="./assets/visibility.png" height="30px" />
               Visibilità
               <p className="stat">{weather.visibility} m</p>
             </div>
