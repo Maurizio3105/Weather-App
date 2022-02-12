@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 const API_KEY = "80b87de9907125aa065d41b29792b7e9"
 
