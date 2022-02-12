@@ -6,9 +6,6 @@ function App() {
   const [weather, setWeather] = useState({})
   const [city, setCity] = useState("")
 
-  useEffect(() => {
-  }, [])
-
   function CercaDati(ev) {
     ev.preventDefault();
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${API_KEY}`)
@@ -90,6 +87,7 @@ function App() {
 
           </div>
         ) : ('')}
+
       </div> 
     </div> 
   );
