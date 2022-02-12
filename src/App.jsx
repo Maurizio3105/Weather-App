@@ -57,7 +57,7 @@ function App() {
         ) : ('')}
         {(typeof weather.main != "undefined") ? (
           <div className="centerDiv">
-            <button className="btn" type="btn"><a href={"https://www.google.it/maps/place/" + weather.name}><img src="./assets/map.png" height="30px" /></a>Cerca su Maps</button>
+            <button className="btn" type="btn"><a href={"https://www.google.it/maps/place/" + weather.name}><img src="./assets/map.png" height="30px" /></a><p className="maps">Cerca su Maps</p></button>
           </div>
         ) : ('')}
 

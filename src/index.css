@@ -81,6 +81,7 @@ body {
   font-weight: 800;
 }
 
+/* DIV 2 */
 .centerDiv {
 width: 30%;
 padding: 20px;
@@ -88,6 +89,10 @@ border-radius: 5px;
 justify-content: space-between;
 align-content: space-around;
 align-items: center;
+}
+.maps {
+  font-family: 'Didact Gothic', sans-serif;
+  display: flex;
 }
 
 /* Icona Esterna*/
@@ -127,6 +132,8 @@ align-items: center;
     border-top: 2px solid;
     top: -4px
 }
+
+/* DIV 3 */
 
 .sideDiv{
   background-color: white;
